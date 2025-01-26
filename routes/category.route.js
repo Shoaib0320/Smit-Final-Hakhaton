@@ -5,12 +5,12 @@ import { addCategory,deleteCategory,editCategory } from "../controllers/category
 const CategpryRouter = express.Router();
 
 // Add a new category
-CategpryRouter.post("/add", addCategory);
+CategpryRouter.post("/", addCategory);
 
 // Edit an existing category
-CategpryRouter.put("/edit/:id", editCategory);
+CategpryRouter.put("/:id", editCategory);
 
 // Delete a category
-CategpryRouter.delete("/delete/:id", deleteCategory);
+CategpryRouter.delete("/:id", deleteCategory);
 
 export default CategpryRouter;

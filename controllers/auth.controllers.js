@@ -75,8 +75,6 @@ export async function SignUpNewUser(req, res) {
   }
 }
 
-
-
 export async function getAllUsers(req, res) {
     try {
         let finding = await UserModal.find()

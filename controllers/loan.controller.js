@@ -3,7 +3,6 @@ import AppointmentModal from "../models/appointment.modal.js";
 import LoanModal from "../models/loan.model.js";
 import UserModal from "../models/user.models.js";
 
-
 /**
  * Submit Loan Form
  */

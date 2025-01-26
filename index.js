@@ -15,10 +15,9 @@ app.use(express.json())
 dotenv.config()
 
 
-app.use("/api/auth" , authRouter)
+app.use("/users" , authRouter)
 app.use("/api/loan" , loanRouter)
-app.use("/api/category", CategpryRouter)
-
+app.use("/category", CategpryRouter)
 
 app.listen(4000 , () => {
     console.log("Server is running on port " + port)
